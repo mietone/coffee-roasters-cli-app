@@ -1,5 +1,4 @@
-require "coffee_roasters/version"
-
-module CoffeeRoasters
-  # Your code goes here...
-end
+require_relative "coffee_roasters/version"
+require_relative "coffee_roasters/cli"
+require_relative "coffee_roasters/roaster"
+require_relative "coffee_roasters/scraper"

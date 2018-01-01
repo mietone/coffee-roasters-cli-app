@@ -1,3 +1,6 @@
 #!/usr/bin/env ruby
 
-puts "Hello 2018!"
+require "bundler/setup"
+require "coffee_roasters"
+
+CoffeeRoasters::CLI.new.call
