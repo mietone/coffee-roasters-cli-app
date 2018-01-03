@@ -2,7 +2,7 @@ class CoffeeRoasters::CLI
 
   def call
     puts ""
-    puts "<<<<<<< Welcome to Coffee Roasters cli gem! >>>>>>>"
+    puts "<<<<<<< Welcome to The 21 Best Coffee Roasters cli gem! >>>>>>>"
     CoffeeRoasters::Scraper.new.scrape_roasters
     list_roasters(1)
     menu
@@ -42,7 +42,7 @@ class CoffeeRoasters::CLI
     @roaster = CoffeeRoasters::Roaster.all
     if from_number == 16
       puts ""
-      puts "----------- Coffee Roasters Top #{from_number} - #{from_number+5} -----------"
+      puts "----------- Coffee Roasters #{from_number} - #{from_number+5} -----------"
       puts ""
       @roaster[from_number-1, 6].each.with_index(from_number) do |roaster, index|
         puts "#{index}. #{roaster.name} - #{roaster.location}"
@@ -51,7 +51,7 @@ class CoffeeRoasters::CLI
       end
     else
       puts ""
-      puts "----------- Coffee Roasters Top #{from_number} - #{from_number+4} -----------"
+      puts "----------- Coffee Roasters #{from_number} - #{from_number+4} -----------"
       puts ""
       @roaster[from_number-1, 5].each.with_index(from_number) do |roaster, index|
         puts "#{index}. #{roaster.name} - #{roaster.location}"
