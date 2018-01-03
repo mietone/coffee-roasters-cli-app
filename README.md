@@ -1,8 +1,8 @@
 # CoffeeRoasters
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/coffee_roasters`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Check out The 21 Best Coffee Roasters in the U.S. 2017.
+(Data from Thrillist)
+"These 21 companies are staffed by Type A coffee geeks who take an insane amount of care in every step of the process, from visiting the farms that grow the coffee and building relationships with the farmers to developing unique roast profiles that bring out each unique bean’s individual snowflake flavor qualities."
 
 ## Installation
 
@@ -22,7 +22,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+First <code>bundle install</code> then run <code>./bin/coffee_roasters</code> to start the program.
+
+It'll show you the top 5 coffee roasters. You can enter the number to see more detail about the roaster.
+Enter 'a' to list top 5 roasters again or 'b' for 6-10, 'c' for 11-15, 'd' for 16-21 roasters.
+Or enter 'exit' to exit the program.
 
 ## Development
 
