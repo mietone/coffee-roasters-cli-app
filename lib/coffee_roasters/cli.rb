@@ -29,8 +29,7 @@ class CoffeeRoasters::CLI
       elsif input == "d"
         list_roasters(16)
       elsif input == "exit"
-        puts "Thanks for visiting. Enjoy your coffee!"
-        exit
+        goodbye
       else
         puts "invalid input."
       end
@@ -74,8 +73,10 @@ class CoffeeRoasters::CLI
     puts ""
     puts "URL - #{the_roaster.url}"
     puts ""
+  end
 
-    menu
+  def goodbye
+    puts "Thanks for visiting. Enjoy your coffee!"
   end
 
 end
