@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-First <code>bundle install</code> then run <code>./bin/coffee_roasters</code> to start the program.
+After installation, enter <code>coffee_roasters</code> to start the program.
 
 It'll show you the top 5 coffee roasters. You can enter the number to see more detail about the roaster.
 Enter 'a' to list top 5 roasters again or 'b' for 6-10, 'c' for 11-15, 'd' for 16-21 roasters.
