@@ -11,7 +11,7 @@ class CoffeeRoasters::CLI
   def menu
     input = nil
     while input != 'exit'
-      puts "==================================================="
+      puts "==============================================================="
       puts "Enter the number of the coffee roaster you'd like more info on:"
       puts "Or type 'A', 'B', 'C', or 'D' for the list - A: 1-5, B: 6-10, C: 11-15, D: 16-21"
       puts "Or type 'exit'."
@@ -42,7 +42,7 @@ class CoffeeRoasters::CLI
     @roaster = CoffeeRoasters::Roaster.all
     if from_number == 16
       puts ""
-      puts "----------- Coffee Roasters #{from_number} - #{from_number+5} -----------"
+      puts "-------------< Coffee Roasters #{from_number} - #{from_number+5} >-------------"
       puts ""
       @roaster[from_number-1, 6].each.with_index(from_number) do |roaster, index|
         puts "#{index}. #{roaster.name} - #{roaster.location}"
@@ -51,7 +51,7 @@ class CoffeeRoasters::CLI
       end
     else
       puts ""
-      puts "----------- Coffee Roasters #{from_number} - #{from_number+4} -----------"
+      puts "-------------< Coffee Roasters #{from_number} - #{from_number+4} >-------------"
       puts ""
       @roaster[from_number-1, 5].each.with_index(from_number) do |roaster, index|
         puts "#{index}. #{roaster.name} - #{roaster.location}"
@@ -64,16 +64,17 @@ class CoffeeRoasters::CLI
   def roaster_detail(num)
     @roaster = CoffeeRoasters::Roaster.all
     the_roaster = @roaster[num]
-    puts "----------- #{num+1}: #{the_roaster.name} -----------"
+    puts "==========={ #{num+1}: #{the_roaster.name.upcase} }==========="
     puts ""
     puts "#{the_roaster.name} - #{the_roaster.location}"
+    puts ""
     puts "#{the_roaster.bean}"
     puts ""
     puts "#{the_roaster.details}"
     puts ""
     puts "URL - #{the_roaster.url}"
     puts ""
-    
+
     menu
   end
 
