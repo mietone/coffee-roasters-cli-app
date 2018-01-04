@@ -71,6 +71,8 @@ class CoffeeRoasters::CLI
     puts ""
     puts "#{the_roaster.details}"
     puts ""
+    puts "URL - #{the_roaster.url}"
+    puts ""
 
     menu
   end

@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    coffee_roasters (0.1.0)
-      nokogiri
+    coffee_roasters (0.1.2)
+      nokogiri (~> 1.8)
 
 GEM
   remote: https://rubygems.org/
@@ -37,7 +37,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.16)
   coffee_roasters!
-  pry
+  pry (~> 0.11.3)
   rake (~> 10.0)
   rspec (~> 3.0)
 
